@@ -15,8 +15,12 @@ public class MainPage extends BasePage {
 	// -- Page Elements --
 
 	private WebElement acceptAllButton() {
-		return getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='sp-cc-accept']")));
+		return getWait().until(ExpectedConditions.visibilityOfElementLocated(
+				By.xpath("//input[@id='sp-cc-accept']")));
 	}
+
+
+	// -- Page Methods --
 
 	public void clickAcceptAllButton(){
 		acceptAllButton().click();
