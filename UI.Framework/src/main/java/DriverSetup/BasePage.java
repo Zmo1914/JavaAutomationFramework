@@ -27,7 +27,7 @@ public abstract class BasePage {
 	}
 
 	public static WebDriver start(){
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\emild\\source\\repos\\JavaAutomationFramework\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/home/emil/IdeaProjects/JavaAutomationFramework/chromedriver");
 
 		WebDriver chromeDriver = new ChromeDriver();
 		return chromeDriver;
